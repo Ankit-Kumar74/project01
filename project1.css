@@ -1,0 +1,246 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+/* Header Styles */
+header {
+    background-color: #ede7e7;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header.logo img {
+    max-width: 100px; 
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+}
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+/* Navigation Bar */
+nav {
+    display: flex;
+   flex-basis: auto;
+   flex-wrap: wrap;
+    align-items:center;
+    width: 100%;
+    justify-content:space-between;
+}
+.nav-links {
+    display: flex;
+    gap: 5px;
+}
+.nav-links a {
+    color: rgb(35, 23, 23);
+    text-decoration: none;
+    padding: 3px 12px;
+    border-radius: 3px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+/* Background colors for each navigation element */
+.nav-links a:nth-child(1) {
+    background-color: #f7d67b; 
+}
+.nav-links a:nth-child(2) {
+    background-color: #af9190; 
+}
+
+.nav-links a:nth-child(3) {
+    background-color: #8dc7d9; 
+}
+.nav-links a:nth-child(4) {
+    background-color: #d3acc8; 
+}
+
+/* Hover effect for navigation links */
+.nav-links a:hover {
+    background-color: #333;
+    color: #f4c542;
+}
+/* Search Bar Styles */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.search-bar input {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    width: 200px;
+    transition: width 0.3s ease;
+}
+
+.search-bar input:focus {
+    width: 200px;
+    border-color: #abeb84;
+}
+
+.search-bar button {
+    padding: 8px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #f4c542;
+    color: #333;
+}
+/* Banner Styles */
+.banner {
+    background: url('banner-image.jpg') no-repeat center center/cover;
+    color: rgb(71, 138, 52);
+    text-align: center;
+    padding: 40px 10px;
+    font-size: 20px;
+}
+
+.banner h2 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.banner p {
+    font-size: 18px;
+    margin: 5px 0 0;
+}
+
+/* Content Section */
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 0 20px;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+.content div {
+    flex: 1;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    box-shadow: #be7474;
+}
+
+.content div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.content img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.content h3 {
+    font-size: 22px;
+    margin: 15px 0;
+    color: #a03c3c;
+}
+
+.content p {
+    font-size: 16px;
+    color: #0b2a78;
+}
+.open p{
+    color:#3f3fcc
+}
+.footer {
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: #1e1f1e;
+    border-top: 1px solid #e0e0e0;
+    height:auto;;
+    color: rgb(226, 207, 146);
+    border-radius: 2px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .logo-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logoimg img {
+    width: 50px; 
+    margin-right: 10px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: right;
+    gap: 15px;
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .icon.twitter {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/733/733579.png');
+  }
+  
+  .icon.instagram {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/733/733558.png');
+  }
+  
+  .icon.facebook {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/733/733547.png');
+  }
+  
+  .icon:hover {
+    opacity: 0.7;
+  }
+  
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .content div {
+        margin-bottom: 10px;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    .banner h2 {
+        font-size: 28px;
+    }
+
+    .banner p {
+        font-size: 18px;
+    }
+}
